@@ -41,7 +41,7 @@
             position: sticky;
             left: 0;
             background-color: #f3f4f6;
-            z-index: 11;
+            z-index: 21;
             box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
             min-width: 3.5rem;
             width: 3.5rem;
@@ -50,13 +50,24 @@
             position: sticky;
             left: 3.5rem;
             background-color: #f3f4f6;
-            z-index: 11;
+            z-index: 21;
             box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
             min-width: 10rem;
         }
         tr:hover .sticky-col-1,
         tr:hover .sticky-col-2 {
             background-color: #f9fafb;
+        }
+        /* Header sticky vertical */
+        .ranking-table thead {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+        .ranking-table thead th {
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -379,7 +390,7 @@
                 <div>
                     <h2 class="text-2xl font-bold mb-4">Ranking Individual</h2>
                     <div class="bg-white rounded-lg shadow-md overflow-x-auto">
-                        <table class="min-w-full text-sm text-left">
+                        <table class="min-w-full text-sm text-left ranking-table">
                             <thead class="bg-gray-100 text-gray-600 uppercase">
                                 <tr>
                                     <th class="p-3 sticky-col-header-1">#</th>
