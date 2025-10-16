@@ -20,6 +20,44 @@
             color: #3b82f6;
             background-color: #eff6ff;
         }
+        .sticky-col-1 {
+            position: sticky;
+            left: 0;
+            background-color: white;
+            z-index: 10;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+            min-width: 3.5rem;
+            width: 3.5rem;
+        }
+        .sticky-col-2 {
+            position: sticky;
+            left: 3.5rem; /* Ancho de la primera columna (#) */
+            background-color: white;
+            z-index: 10;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+            min-width: 10rem;
+        }
+        .sticky-col-header-1 {
+            position: sticky;
+            left: 0;
+            background-color: #f3f4f6;
+            z-index: 11;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+            min-width: 3.5rem;
+            width: 3.5rem;
+        }
+        .sticky-col-header-2 {
+            position: sticky;
+            left: 3.5rem;
+            background-color: #f3f4f6;
+            z-index: 11;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+            min-width: 10rem;
+        }
+        tr:hover .sticky-col-1,
+        tr:hover .sticky-col-2 {
+            background-color: #f9fafb;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -132,7 +170,7 @@
                 "semana": 3,
                 "equipos": {
                   "amarillo": {"jugadoras": ["Estel Pechamé", "Barbi", "Blanca", "Pati Casas", "Mare", "Andrea"], "portera": "Belén"},
-                  "azul": {"jugadoras": ["Jose", "Julia", "Brugui", "Cristina Maristany", "Alicia", "Coqui"], "portera": "Candet"},
+                  "azul": {"jugadoras": ["Jose", "Julia", "Brugui", "Cristina Maristany", "Alicia", "Coqui"], "portera": "Cande"},
                   "blanco": {"jugadoras": ["Patri Álvarez", "Marta Armenteras", "Coma", "Elia", "Pali"], "portera": "Mariana"}
                 },
                 "resultados": [
@@ -183,7 +221,7 @@
               {"jugadora": "Pati Casas", "puntos": 31, "penaltis_cometidos": 1},
               {"jugadora": "Blanca", "puntos": 29, "goles": 1, "penaltis_marcados": 1},
               {"jugadora": "Mare", "puntos": 29, "penaltis_cometidos": 1},
-              {"jugadora": "Candet (p.)", "puntos": 28},
+              {"jugadora": "Cande (p.)", "puntos": 28},
               {"jugadora": "Pali", "puntos": 26, "goles": 4, "penaltis_marcados": 2},
               {"jugadora": "Coqui", "puntos": 26, "goles": 2, "penaltis_marcados": 1},
               {"jugadora": "Julia", "puntos": 24, "goles": 3, "penaltis_cometidos": 1},
@@ -344,8 +382,8 @@
                         <table class="min-w-full text-sm text-left">
                             <thead class="bg-gray-100 text-gray-600 uppercase">
                                 <tr>
-                                    <th class="p-3">#</th>
-                                    <th class="p-3">Jugadora</th>
+                                    <th class="p-3 sticky-col-header-1">#</th>
+                                    <th class="p-3 sticky-col-header-2">Jugadora</th>
                                     <th class="p-3 text-center">Puntos</th>
                                     <th class="p-3 text-center">Jornadas</th>
                                     <th class="p-3 text-center">Goles</th>
@@ -356,8 +394,8 @@
                             <tbody class="divide-y divide-gray-200">
                                 ${ranking.map((r, i) => `
                                     <tr class="hover:bg-gray-50">
-                                        <td class="p-3 font-semibold">${i + 1}</td>
-                                        <td class="p-3 font-semibold">${r.jugadora}</td>
+                                        <td class="p-3 font-semibold sticky-col-1">${i + 1}</td>
+                                        <td class="p-3 font-semibold sticky-col-2">${r.jugadora}</td>
                                         <td class="p-3 text-center font-bold">${r.puntos}</td>
                                         <td class="p-3 text-center">${r.jornadas_disputadas || 0}</td>
                                         <td class="p-3 text-center">${r.goles || 0}</td>
@@ -394,7 +432,6 @@
                 if (name === 'Julia Colomina') return 'Julia';
                 if (name === 'Estel Pechamé') return 'Estel Pechamé';
                 if (name === 'Estel') return 'Estel Pechamé';
-                if (name === 'Cande') return 'Candet';
                 return name;
             };
 
