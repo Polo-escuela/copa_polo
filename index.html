@@ -670,8 +670,21 @@
                 const playersInJornada = new Set();
                 Object.values(jornada.equipos).forEach(equipo => {
                     equipo.jugadoras.forEach(nombre => playersInJornada.add(normalizeName(nombre)));
-                    playersInJornada.add(normalizeName(equipo.portera));
+                    if (equipo.portera) {
+                        playersInJornada.add(normalizeName(equipo.portera));
+                    }
                 });
+                
+                // Para jornadas donde las porteras rotan (ej: Jornada 5), buscar en los resultados
+                if (jornada.resultados && jornada.resultados.some(r => r.porteras)) {
+                    jornada.resultados.forEach(resultado => {
+                        if (resultado.porteras) {
+                            Object.values(resultado.porteras).forEach(portera => {
+                                playersInJornada.add(normalizeName(portera));
+                            });
+                        }
+                    });
+                }
                 
                 // Añadir a Andrea en la Jornada 1 por el gol marcado
                 if (jornada.semana === 1) {
