@@ -276,25 +276,25 @@
               {
                 "semana": 5,
                 "equipos": {
-                  "rojo": {"jugadoras": ["Estel Pechamé", "Coqui", "Marta Comadrán", "Elia", "Marta Armenteras"], "portera": "Mariana"},
-                  "azul": {"jugadoras": ["Brugui", "Barbi", "Andrea", "Jose", "Cristina Maristany", "Xantal"], "portera": "Cande"},
-                  "blanco": {"jugadoras": ["Mare", "Pali", "Julia", "Patricia Álvarez", "Alicia", "Blanca"], "portera": "Mariana"}
+                  "rojo": {"jugadoras": ["Estel Pechamé", "Coqui", "Marta Comadrán", "Elia", "Marta Armenteras"]},
+                  "azul": {"jugadoras": ["Brugui", "Barbi", "Andrea", "Jose", "Cristina Maristany", "Xantal"]},
+                  "blanco": {"jugadoras": ["Mare", "Pali", "Julia", "Patricia Álvarez", "Alicia", "Blanca"]}
                 },
                 "resultados": [
-                    {"partido": 1, "local": "Azul", "visitante": "Rojo", "resultado": "1-0", "goles": {"Azul": ["Andrea (penalti)"]}},
-                    {"partido": 2, "local": "Rojo", "visitante": "Blanco", "resultado": "0-0"},
-                    {"partido": 3, "local": "Azul", "visitante": "Blanco", "resultado": "0-0"},
-                    {"partido": 4, "local": "Azul", "visitante": "Rojo", "resultado": "1-1", "goles": {"Azul": ["Jose"], "Rojo": ["Estel Pechamé"]}},
-                    {"partido": 5, "local": "Blanco", "visitante": "Rojo", "resultado": "2-1", "goles": {"Blanco": ["Julia (penalti)", "Patricia Álvarez"], "Rojo": ["Estel Pechamé"]}},
-                    {"partido": 6, "local": "Blanco", "visitante": "Azul", "resultado": "1-0", "goles": {"Blanco": ["Pali"]}},
-                    {"partido": 7, "local": "Azul", "visitante": "Rojo", "resultado": "1-0", "goles": {"Azul": ["Andrea"]}},
-                    {"partido": 8, "local": "Rojo", "visitante": "Blanco", "resultado": "0-1", "goles": {"Blanco": ["Patricia Álvarez"]}},
-                    {"partido": 9, "local": "Blanco", "visitante": "Azul", "resultado": "1-0", "goles": {"Blanco": ["Julia (penalti)"]}}
+                    {"partido": 1, "local": "Azul", "visitante": "Rojo", "resultado": "1-0", "goles": {"Azul": ["Andrea (penalti)"]}, "porteras": {"Azul": "Mariana", "Rojo": "Cande"}},
+                    {"partido": 2, "local": "Rojo", "visitante": "Blanco", "resultado": "0-0", "porteras": {"Rojo": "Mariana", "Blanco": "Cande"}},
+                    {"partido": 3, "local": "Azul", "visitante": "Blanco", "resultado": "0-0", "porteras": {"Azul": "Cande", "Blanco": "Mariana"}},
+                    {"partido": 4, "local": "Azul", "visitante": "Rojo", "resultado": "1-1", "goles": {"Azul": ["Jose"], "Rojo": ["Estel Pechamé"]}, "porteras": {"Azul": "Mariana", "Rojo": "Cande"}},
+                    {"partido": 5, "local": "Blanco", "visitante": "Rojo", "resultado": "2-1", "goles": {"Blanco": ["Julia (penalti)", "Patricia Álvarez"], "Rojo": ["Estel Pechamé"]}, "porteras": {"Blanco": "Cande", "Rojo": "Mariana"}},
+                    {"partido": 6, "local": "Blanco", "visitante": "Azul", "resultado": "1-0", "goles": {"Blanco": ["Pali"]}, "porteras": {"Blanco": "Mariana", "Azul": "Cande"}},
+                    {"partido": 7, "local": "Azul", "visitante": "Rojo", "resultado": "1-0", "goles": {"Azul": ["Andrea"]}, "porteras": {"Azul": "Mariana", "Rojo": "Cande"}},
+                    {"partido": 8, "local": "Rojo", "visitante": "Blanco", "resultado": "0-1", "goles": {"Blanco": ["Patricia Álvarez"]}, "porteras": {"Rojo": "Mariana", "Blanco": "Cande"}},
+                    {"partido": 9, "local": "Blanco", "visitante": "Azul", "resultado": "1-0", "goles": {"Blanco": ["Julia (penalti)"]}, "porteras": {"Blanco": "Mariana", "Azul": "Cande"}}
                 ],
                 "clasificacion": [
-                  {"equipo": "Blanco", "pj": 6, "g": 3, "e": 2, "p": 1, "gf": 6, "gc": 3, "dg": 3, "puntos": 8, "bonus": 0, "total": 8},
-                  {"equipo": "Azul", "pj": 6, "g": 3, "e": 2, "p": 1, "gf": 5, "gc": 3, "dg": 2, "puntos": 8, "bonus": 0, "total": 8},
-                  {"equipo": "Rojo", "pj": 6, "g": 0, "e": 3, "p": 3, "gf": 3, "gc": 8, "dg": -5, "puntos": 3, "bonus": 0, "total": 3}
+                  {"equipo": "Blanco", "pj": 6, "g": 4, "e": 2, "p": 0, "gf": 6, "gc": 3, "dg": 3, "puntos": 14, "bonus": 3, "total": 17},
+                  {"equipo": "Azul", "pj": 6, "g": 2, "e": 2, "p": 2, "gf": 5, "gc": 3, "dg": 2, "puntos": 8, "bonus": 0, "total": 8},
+                  {"equipo": "Rojo", "pj": 6, "g": 0, "e": 2, "p": 4, "gf": 3, "gc": 8, "dg": -5, "puntos": 2, "bonus": 0, "total": 2}
                 ],
                 "goleadoras": [
                   {"jugadora": "Julia", "goles": 2, "penaltis": 2},
@@ -315,26 +315,26 @@
               }
             ],
             "ranking_individual": [
-              {"jugadora": "Elia", "puntos": 49, "goles": 6, "penaltis_marcados": 3},
-              {"jugadora": "Barbi", "puntos": 48, "goles": 5, "penaltis_marcados": 2, "penaltis_cometidos": 1},
+              {"jugadora": "Elia", "puntos": 48, "goles": 6, "penaltis_marcados": 3},
+              {"jugadora": "Mare", "puntos": 47, "penaltis_cometidos": 1},
+              {"jugadora": "Blanca", "puntos": 47, "goles": 1, "penaltis_marcados": 1},
+              {"jugadora": "Mariana (p.)", "puntos": 46},
               {"jugadora": "Brugui", "puntos": 44, "goles": 3, "penaltis_marcados": 2},
-              {"jugadora": "Julia", "puntos": 41, "goles": 9, "penaltis_marcados": 2, "penaltis_cometidos": 1},
-              {"jugadora": "Patricia Álvarez", "puntos": 41, "goles": 5, "penaltis_marcados": 1},
-              {"jugadora": "Mare", "puntos": 38, "penaltis_cometidos": 1},
-              {"jugadora": "Blanca", "puntos": 38, "goles": 1, "penaltis_marcados": 1},
-              {"jugadora": "Cande (p.)", "puntos": 37},
-              {"jugadora": "Estel Pechamé", "puntos": 37, "goles": 5, "penaltis_marcados": 1},
+              {"jugadora": "Pali", "puntos": 44, "goles": 7, "penaltis_marcados": 3},
+              {"jugadora": "Julia", "puntos": 42, "goles": 9, "penaltis_marcados": 2, "penaltis_cometidos": 1},
+              {"jugadora": "Patricia Álvarez", "puntos": 42, "goles": 5, "penaltis_marcados": 1},
+              {"jugadora": "Barbi", "puntos": 40, "goles": 5, "penaltis_marcados": 2, "penaltis_cometidos": 1},
+              {"jugadora": "Alicia", "puntos": 39},
+              {"jugadora": "Cande (p.)", "puntos": 38},
+              {"jugadora": "Estel Pechamé", "puntos": 36, "goles": 7, "penaltis_marcados": 1},
               {"jugadora": "Belén (p.)", "puntos": 36},
-              {"jugadora": "Marta Comadrán", "puntos": 35, "goles": 2},
-              {"jugadora": "Pali", "puntos": 35, "goles": 6, "penaltis_marcados": 3},
+              {"jugadora": "Marta Comadrán", "puntos": 34, "goles": 2},
               {"jugadora": "Cristina Maristany", "puntos": 33, "goles": 1, "penaltis_cometidos": 3},
-              {"jugadora": "Mariana (p.)", "puntos": 32},
               {"jugadora": "Pati Casas", "puntos": 31, "penaltis_cometidos": 1},
-              {"jugadora": "Coqui", "puntos": 30, "goles": 2, "penaltis_marcados": 1},
-              {"jugadora": "Jose", "puntos": 30, "goles": 6, "penaltis_marcados": 1, "penaltis_cometidos": 4},
-              {"jugadora": "Alicia", "puntos": 30},
-              {"jugadora": "Andrea", "puntos": 29, "goles": 4, "penaltis_marcados": 1, "penaltis_cometidos": 2},
-              {"jugadora": "Marta Armenteras", "puntos": 28, "goles": 1, "penaltis_cometidos": 3},
+              {"jugadora": "Jose", "puntos": 30, "goles": 7, "penaltis_marcados": 1, "penaltis_cometidos": 5},
+              {"jugadora": "Coqui", "puntos": 29, "goles": 2, "penaltis_marcados": 1},
+              {"jugadora": "Andrea", "puntos": 29, "goles": 6, "penaltis_marcados": 2, "penaltis_cometidos": 2},
+              {"jugadora": "Marta Armenteras", "puntos": 27, "goles": 1, "penaltis_cometidos": 5},
               {"jugadora": "Xantal", "puntos": 8}
             ]
           }
@@ -561,7 +561,7 @@
                         </button>
                         <button onclick="renderRankingIndividual('media')" 
                                 class="px-4 py-2 rounded ${sortBy === 'media' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}">
-                            Ordenar por Pts/Partido
+                            Ordenar por Pts/Jornada
                         </button>
                     </div>
                     <div class="bg-white rounded-lg shadow-md overflow-x-auto">
@@ -572,7 +572,7 @@
                                     <th class="p-3 sticky-col-header-2">Jugadora</th>
                                     <th class="p-3 text-center">Puntos</th>
                                     <th class="p-3 text-center">Jornadas</th>
-                                    <th class="p-3 text-center">Pts/Partido</th>
+                                    <th class="p-3 text-center">Pts/Jornada</th>
                                     <th class="p-3 text-center">Goles</th>
                                     <th class="p-3 text-center">P. Provocados</th>
                                     <th class="p-3 text-center">P. Cometidos</th>
